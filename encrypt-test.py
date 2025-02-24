@@ -3,6 +3,8 @@ import boto3
 
 REGION = "us-east-1"
 
+# Uses AWS CLI credentials
+
 def main():
     # Get the KMS key ID from the environment variable.
     key_id = os.environ.get("KMS_KEY_ID")
